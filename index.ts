@@ -50,6 +50,12 @@ app.post('/clicks', function(request,response){
 
 });
 
+app.delete('/clicks', function (request, response) {
+    clicks = 0;
+    response.send(200);
+});
+
+
 app.get('/', function(request,response){
     response.send('Я живой и обновляюсь');
 }
